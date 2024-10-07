@@ -1,0 +1,6 @@
+module multiplicador(input [1:0] in_A, in_B,
+		output wire [3:0]);
+
+out = in_A*in_B;
+		
+endmodule

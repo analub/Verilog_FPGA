@@ -1,0 +1,6 @@
+module mulSomador (
+						input [1:0] A, B,
+						output wire [4:0] out);
+
+						
+endmodule

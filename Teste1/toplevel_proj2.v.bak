@@ -1,0 +1,17 @@
+module toplevel_proj2(	
+						    input [23:0] in,
+							 input clr_n,
+							 input ena_in,
+							 output [23:0] out,
+							 output ena_out
+							 );
+
+proj1(
+		.clr_n(clr_n),
+		.ena_in(ena_in),
+		.in(in),
+		.out(out),
+		.ena_out(ena_out)
+		); 
+		
+endmodule 

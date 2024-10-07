@@ -1,0 +1,155 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Desktop/Ana_Luisa/Exercicio2/simulation/qsim
+vContador_clr
+Z1 !s110 1727448033
+!i10b 1
+!s100 a=b?UCEPeOe9g@9JoW8Sm1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I5DZXDnRnFl8:Td:Foc:HE0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727448032
+Z4 8Exercicio2.vo
+Z5 FExercicio2.vo
+!i122 22
+L0 32 663
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1727448033.000000
+Z8 !s107 Exercicio2.vo|
+Z9 !s90 -work|work|Exercicio2.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@contador_clr
+vContador_clr_vlg_vec_tst
+R1
+!i10b 1
+!s100 2R?0[mgO5Nf4QTd3E3dN72
+R2
+I8Gc7Kho[>[TIz>>=<loW70
+R3
+R0
+w1727448031
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+!i122 23
+L0 30 38
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R10
+R11
+n@contador_clr_vlg_vec_tst
+vContador_m64
+Z12 !s110 1727374696
+!i10b 1
+!s100 J<2Q=b^KSVKebFfBO:Z^I2
+R2
+I;Zm:FN8a:@[l1bgS1K8[z3
+R3
+R0
+Z13 w1727374695
+R4
+R5
+!i122 8
+L0 32 506
+R6
+r1
+!s85 0
+31
+Z14 !s108 1727374696.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@contador_m64
+vContador_m64_vlg_vec_tst
+R12
+!i10b 1
+!s100 P;iQ[WPk>^eg=`Zmf7lIQ1
+R2
+I@f4TJMFb@FKnUFDVm`4Kc3
+R3
+R0
+R13
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 9
+L0 30 31
+R6
+r1
+!s85 0
+31
+R14
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@contador_m64_vlg_vec_tst
+vtop_Cont64
+Z15 !s110 1727449951
+!i10b 1
+!s100 C?F50;bEf_ZIGB3`;U;Di0
+R2
+I>48N>5NdbOECOC3GZ5n_C3
+R3
+R0
+Z16 w1727449950
+R4
+R5
+!i122 28
+L0 32 1601
+R6
+r1
+!s85 0
+31
+Z17 !s108 1727449951.000000
+R8
+R9
+!i113 1
+R10
+R11
+ntop_@cont64
+vtop_Cont64_vlg_vec_tst
+R15
+!i10b 1
+!s100 YYU^MNGXz_S`P]CX<kP;21
+R2
+I[:0PU;XG_HciFZMX?IkbG0
+R3
+R0
+R16
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+!i122 29
+L0 30 56
+R6
+r1
+!s85 0
+31
+R17
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
+!i113 1
+R10
+R11
+ntop_@cont64_vlg_vec_tst

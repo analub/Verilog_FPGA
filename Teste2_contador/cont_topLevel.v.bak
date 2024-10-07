@@ -1,0 +1,9 @@
+module cont_topLevel (input clk, input clr_n, 
+					output reg [5:0] out);
+
+Contador inst_cont(
+					input clk, input clr_n, 
+//					input [5:0] in,
+					output reg [5:0] out);
+					
+endmodule

@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Desktop/Ana_Luisa/Exercicio1/simulation/qsim
+vmulSomador
+Z1 !s110 1727373516
+!i10b 1
+!s100 fLXI<A4oldM3hb;Q]WGgb0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IX7c<IP4lMY2<c:gcg>[ad1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727373516
+8Exercicio1.vo
+FExercicio1.vo
+!i122 8
+L0 32 1496
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1727373516.000000
+!s107 Exercicio1.vo|
+!s90 -work|work|Exercicio1.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+nmul@somador
+vmulSomador_vlg_vec_tst
+R1
+!i10b 1
+!s100 B8o;XeR`da4hfmm??N]D[0
+R2
+IA=Y[FVloPOTdz6=mdH;eB3
+R3
+R0
+w1727373515
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 9
+L0 30 54
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+R7
+nmul@somador_vlg_vec_tst

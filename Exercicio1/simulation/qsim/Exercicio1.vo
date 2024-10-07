@@ -1,0 +1,1527 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+
+// DATE "09/26/2024 14:58:36"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module mulSomador (
+	A,
+	B,
+	Y,
+	Yab,
+	Z);
+input 	[1:0] A;
+input 	[1:0] B;
+output 	[6:0] Y;
+output 	[6:0] Yab;
+output 	[6:0] Z;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \ins_MultA|Mult0~8 ;
+wire \ins_MultA|Mult0~9 ;
+wire \ins_MultA|Mult0~10 ;
+wire \ins_MultA|Mult0~11 ;
+wire \ins_MultA|Mult0~12 ;
+wire \ins_MultA|Mult0~13 ;
+wire \ins_MultA|Mult0~14 ;
+wire \ins_MultA|Mult0~15 ;
+wire \ins_MultA|Mult0~16 ;
+wire \ins_MultA|Mult0~17 ;
+wire \ins_MultA|Mult0~18 ;
+wire \ins_MultA|Mult0~19 ;
+wire \ins_MultA|Mult0~20 ;
+wire \ins_MultA|Mult0~21 ;
+wire \ins_MultA|Mult0~22 ;
+wire \ins_MultA|Mult0~23 ;
+wire \ins_MultA|Mult0~24 ;
+wire \ins_MultA|Mult0~25 ;
+wire \ins_MultA|Mult0~26 ;
+wire \ins_MultA|Mult0~27 ;
+wire \ins_MultA|Mult0~28 ;
+wire \ins_MultA|Mult0~29 ;
+wire \ins_MultA|Mult0~30 ;
+wire \ins_MultA|Mult0~31 ;
+wire \ins_MultA|Mult0~32 ;
+wire \ins_MultA|Mult0~33 ;
+wire \ins_MultA|Mult0~34 ;
+wire \ins_MultA|Mult0~35 ;
+wire \ins_MultA|Mult0~36 ;
+wire \ins_MultA|Mult0~37 ;
+wire \ins_MultA|Mult0~38 ;
+wire \ins_MultA|Mult0~39 ;
+wire \ins_MultA|Mult0~40 ;
+wire \ins_MultA|Mult0~41 ;
+wire \ins_MultA|Mult0~42 ;
+wire \ins_MultA|Mult0~43 ;
+wire \ins_MultA|Mult0~44 ;
+wire \ins_MultA|Mult0~45 ;
+wire \ins_MultA|Mult0~46 ;
+wire \ins_MultA|Mult0~47 ;
+wire \ins_MultA|Mult0~48 ;
+wire \ins_MultA|Mult0~49 ;
+wire \ins_MultA|Mult0~50 ;
+wire \ins_MultA|Mult0~51 ;
+wire \ins_MultA|Mult0~52 ;
+wire \ins_MultA|Mult0~53 ;
+wire \ins_MultA|Mult0~54 ;
+wire \ins_MultA|Mult0~55 ;
+wire \ins_MultA|Mult0~56 ;
+wire \ins_MultA|Mult0~57 ;
+wire \ins_MultA|Mult0~58 ;
+wire \ins_MultA|Mult0~59 ;
+wire \ins_MultA|Mult0~60 ;
+wire \ins_MultA|Mult0~61 ;
+wire \ins_MultA|Mult0~62 ;
+wire \ins_MultA|Mult0~63 ;
+wire \ins_MultA|Mult0~64 ;
+wire \ins_MultA|Mult0~65 ;
+wire \ins_MultA|Mult0~66 ;
+wire \ins_MultA|Mult0~67 ;
+wire \ins_MultB|Mult0~8 ;
+wire \ins_MultB|Mult0~9 ;
+wire \ins_MultB|Mult0~10 ;
+wire \ins_MultB|Mult0~11 ;
+wire \ins_MultB|Mult0~12 ;
+wire \ins_MultB|Mult0~13 ;
+wire \ins_MultB|Mult0~14 ;
+wire \ins_MultB|Mult0~15 ;
+wire \ins_MultB|Mult0~16 ;
+wire \ins_MultB|Mult0~17 ;
+wire \ins_MultB|Mult0~18 ;
+wire \ins_MultB|Mult0~19 ;
+wire \ins_MultB|Mult0~20 ;
+wire \ins_MultB|Mult0~21 ;
+wire \ins_MultB|Mult0~22 ;
+wire \ins_MultB|Mult0~23 ;
+wire \ins_MultB|Mult0~24 ;
+wire \ins_MultB|Mult0~25 ;
+wire \ins_MultB|Mult0~26 ;
+wire \ins_MultB|Mult0~27 ;
+wire \ins_MultB|Mult0~28 ;
+wire \ins_MultB|Mult0~29 ;
+wire \ins_MultB|Mult0~30 ;
+wire \ins_MultB|Mult0~31 ;
+wire \ins_MultB|Mult0~32 ;
+wire \ins_MultB|Mult0~33 ;
+wire \ins_MultB|Mult0~34 ;
+wire \ins_MultB|Mult0~35 ;
+wire \ins_MultB|Mult0~36 ;
+wire \ins_MultB|Mult0~37 ;
+wire \ins_MultB|Mult0~38 ;
+wire \ins_MultB|Mult0~39 ;
+wire \ins_MultB|Mult0~40 ;
+wire \ins_MultB|Mult0~41 ;
+wire \ins_MultB|Mult0~42 ;
+wire \ins_MultB|Mult0~43 ;
+wire \ins_MultB|Mult0~44 ;
+wire \ins_MultB|Mult0~45 ;
+wire \ins_MultB|Mult0~46 ;
+wire \ins_MultB|Mult0~47 ;
+wire \ins_MultB|Mult0~48 ;
+wire \ins_MultB|Mult0~49 ;
+wire \ins_MultB|Mult0~50 ;
+wire \ins_MultB|Mult0~51 ;
+wire \ins_MultB|Mult0~52 ;
+wire \ins_MultB|Mult0~53 ;
+wire \ins_MultB|Mult0~54 ;
+wire \ins_MultB|Mult0~55 ;
+wire \ins_MultB|Mult0~56 ;
+wire \ins_MultB|Mult0~57 ;
+wire \ins_MultB|Mult0~58 ;
+wire \ins_MultB|Mult0~59 ;
+wire \ins_MultB|Mult0~60 ;
+wire \ins_MultB|Mult0~61 ;
+wire \ins_MultB|Mult0~62 ;
+wire \ins_MultB|Mult0~63 ;
+wire \ins_MultB|Mult0~64 ;
+wire \ins_MultB|Mult0~65 ;
+wire \ins_MultB|Mult0~66 ;
+wire \ins_MultB|Mult0~67 ;
+wire \ins_MultAB|Mult0~8 ;
+wire \ins_MultAB|Mult0~9 ;
+wire \ins_MultAB|Mult0~10 ;
+wire \ins_MultAB|Mult0~11 ;
+wire \ins_MultAB|Mult0~12 ;
+wire \ins_MultAB|Mult0~13 ;
+wire \ins_MultAB|Mult0~14 ;
+wire \ins_MultAB|Mult0~15 ;
+wire \ins_MultAB|Mult0~16 ;
+wire \ins_MultAB|Mult0~17 ;
+wire \ins_MultAB|Mult0~18 ;
+wire \ins_MultAB|Mult0~19 ;
+wire \ins_MultAB|Mult0~20 ;
+wire \ins_MultAB|Mult0~21 ;
+wire \ins_MultAB|Mult0~22 ;
+wire \ins_MultAB|Mult0~23 ;
+wire \ins_MultAB|Mult0~24 ;
+wire \ins_MultAB|Mult0~25 ;
+wire \ins_MultAB|Mult0~26 ;
+wire \ins_MultAB|Mult0~27 ;
+wire \ins_MultAB|Mult0~28 ;
+wire \ins_MultAB|Mult0~29 ;
+wire \ins_MultAB|Mult0~30 ;
+wire \ins_MultAB|Mult0~31 ;
+wire \ins_MultAB|Mult0~32 ;
+wire \ins_MultAB|Mult0~33 ;
+wire \ins_MultAB|Mult0~34 ;
+wire \ins_MultAB|Mult0~35 ;
+wire \ins_MultAB|Mult0~36 ;
+wire \ins_MultAB|Mult0~37 ;
+wire \ins_MultAB|Mult0~38 ;
+wire \ins_MultAB|Mult0~39 ;
+wire \ins_MultAB|Mult0~40 ;
+wire \ins_MultAB|Mult0~41 ;
+wire \ins_MultAB|Mult0~42 ;
+wire \ins_MultAB|Mult0~43 ;
+wire \ins_MultAB|Mult0~44 ;
+wire \ins_MultAB|Mult0~45 ;
+wire \ins_MultAB|Mult0~46 ;
+wire \ins_MultAB|Mult0~47 ;
+wire \ins_MultAB|Mult0~48 ;
+wire \ins_MultAB|Mult0~49 ;
+wire \ins_MultAB|Mult0~50 ;
+wire \ins_MultAB|Mult0~51 ;
+wire \ins_MultAB|Mult0~52 ;
+wire \ins_MultAB|Mult0~53 ;
+wire \ins_MultAB|Mult0~54 ;
+wire \ins_MultAB|Mult0~55 ;
+wire \ins_MultAB|Mult0~56 ;
+wire \ins_MultAB|Mult0~57 ;
+wire \ins_MultAB|Mult0~58 ;
+wire \ins_MultAB|Mult0~59 ;
+wire \ins_MultAB|Mult0~60 ;
+wire \ins_MultAB|Mult0~61 ;
+wire \ins_MultAB|Mult0~62 ;
+wire \ins_MultAB|Mult0~63 ;
+wire \ins_MultAB|Mult0~64 ;
+wire \ins_MultAB|Mult0~65 ;
+wire \ins_MultAB|Mult0~66 ;
+wire \ins_MultAB|Mult0~67 ;
+wire \Y[0]~output_o ;
+wire \Y[1]~output_o ;
+wire \Y[2]~output_o ;
+wire \Y[3]~output_o ;
+wire \Y[4]~output_o ;
+wire \Y[5]~output_o ;
+wire \Y[6]~output_o ;
+wire \Yab[0]~output_o ;
+wire \Yab[1]~output_o ;
+wire \Yab[2]~output_o ;
+wire \Yab[3]~output_o ;
+wire \Yab[4]~output_o ;
+wire \Yab[5]~output_o ;
+wire \Yab[6]~output_o ;
+wire \Z[0]~output_o ;
+wire \Z[1]~output_o ;
+wire \Z[2]~output_o ;
+wire \Z[3]~output_o ;
+wire \Z[4]~output_o ;
+wire \Z[5]~output_o ;
+wire \Z[6]~output_o ;
+wire \A[0]~input_o ;
+wire \A[1]~input_o ;
+wire \B[0]~input_o ;
+wire \B[1]~input_o ;
+wire \inst_Soma1|Add0~1_sumout ;
+wire \inst_Soma1|Add0~2 ;
+wire \inst_Soma1|Add0~5_sumout ;
+wire \inst_Soma1|Add0~6 ;
+wire \inst_Soma1|Add0~9_sumout ;
+wire \inst_Soma1|Add0~10 ;
+wire \inst_Soma1|Add0~13_sumout ;
+wire \inst_Soma1|Add0~14 ;
+wire \inst_Soma1|Add0~17_sumout ;
+wire \inst_Soma2|Add0~1_sumout ;
+wire \inst_Soma2|Add0~2 ;
+wire \inst_Soma2|Add0~5_sumout ;
+wire \inst_Soma2|Add0~6 ;
+wire \inst_Soma2|Add0~9_sumout ;
+wire \inst_Soma2|Add0~10 ;
+wire \inst_Soma2|Add0~13_sumout ;
+wire \inst_Soma2|Add0~14 ;
+wire \inst_Soma2|Add0~17_sumout ;
+wire \inst_SomaGeral|Add0~1_sumout ;
+wire \inst_SomaGeral|Add0~2 ;
+wire \inst_SomaGeral|Add0~5_sumout ;
+wire \inst_SomaGeral|Add0~6 ;
+wire \inst_SomaGeral|Add0~9_sumout ;
+wire \inst_SomaGeral|Add0~10 ;
+wire \inst_SomaGeral|Add0~13_sumout ;
+wire \inst_SomaGeral|Add0~14 ;
+wire \inst_SomaGeral|Add0~17_sumout ;
+wire \inst_Soma1|Add0~18 ;
+wire \inst_Soma1|Add0~21_sumout ;
+wire \inst_SomaGeral|Add0~18 ;
+wire \inst_SomaGeral|Add0~21_sumout ;
+wire [3:0] \ins_MultA|out ;
+wire [3:0] \ins_MultB|out ;
+wire [3:0] \ins_MultAB|out ;
+
+wire [63:0] \ins_MultA|Mult0~mac_RESULTA_bus ;
+wire [63:0] \ins_MultB|Mult0~mac_RESULTA_bus ;
+wire [63:0] \ins_MultAB|Mult0~mac_RESULTA_bus ;
+
+assign \ins_MultA|out [0] = \ins_MultA|Mult0~mac_RESULTA_bus [0];
+assign \ins_MultA|out [1] = \ins_MultA|Mult0~mac_RESULTA_bus [1];
+assign \ins_MultA|out [2] = \ins_MultA|Mult0~mac_RESULTA_bus [2];
+assign \ins_MultA|out [3] = \ins_MultA|Mult0~mac_RESULTA_bus [3];
+assign \ins_MultA|Mult0~8  = \ins_MultA|Mult0~mac_RESULTA_bus [4];
+assign \ins_MultA|Mult0~9  = \ins_MultA|Mult0~mac_RESULTA_bus [5];
+assign \ins_MultA|Mult0~10  = \ins_MultA|Mult0~mac_RESULTA_bus [6];
+assign \ins_MultA|Mult0~11  = \ins_MultA|Mult0~mac_RESULTA_bus [7];
+assign \ins_MultA|Mult0~12  = \ins_MultA|Mult0~mac_RESULTA_bus [8];
+assign \ins_MultA|Mult0~13  = \ins_MultA|Mult0~mac_RESULTA_bus [9];
+assign \ins_MultA|Mult0~14  = \ins_MultA|Mult0~mac_RESULTA_bus [10];
+assign \ins_MultA|Mult0~15  = \ins_MultA|Mult0~mac_RESULTA_bus [11];
+assign \ins_MultA|Mult0~16  = \ins_MultA|Mult0~mac_RESULTA_bus [12];
+assign \ins_MultA|Mult0~17  = \ins_MultA|Mult0~mac_RESULTA_bus [13];
+assign \ins_MultA|Mult0~18  = \ins_MultA|Mult0~mac_RESULTA_bus [14];
+assign \ins_MultA|Mult0~19  = \ins_MultA|Mult0~mac_RESULTA_bus [15];
+assign \ins_MultA|Mult0~20  = \ins_MultA|Mult0~mac_RESULTA_bus [16];
+assign \ins_MultA|Mult0~21  = \ins_MultA|Mult0~mac_RESULTA_bus [17];
+assign \ins_MultA|Mult0~22  = \ins_MultA|Mult0~mac_RESULTA_bus [18];
+assign \ins_MultA|Mult0~23  = \ins_MultA|Mult0~mac_RESULTA_bus [19];
+assign \ins_MultA|Mult0~24  = \ins_MultA|Mult0~mac_RESULTA_bus [20];
+assign \ins_MultA|Mult0~25  = \ins_MultA|Mult0~mac_RESULTA_bus [21];
+assign \ins_MultA|Mult0~26  = \ins_MultA|Mult0~mac_RESULTA_bus [22];
+assign \ins_MultA|Mult0~27  = \ins_MultA|Mult0~mac_RESULTA_bus [23];
+assign \ins_MultA|Mult0~28  = \ins_MultA|Mult0~mac_RESULTA_bus [24];
+assign \ins_MultA|Mult0~29  = \ins_MultA|Mult0~mac_RESULTA_bus [25];
+assign \ins_MultA|Mult0~30  = \ins_MultA|Mult0~mac_RESULTA_bus [26];
+assign \ins_MultA|Mult0~31  = \ins_MultA|Mult0~mac_RESULTA_bus [27];
+assign \ins_MultA|Mult0~32  = \ins_MultA|Mult0~mac_RESULTA_bus [28];
+assign \ins_MultA|Mult0~33  = \ins_MultA|Mult0~mac_RESULTA_bus [29];
+assign \ins_MultA|Mult0~34  = \ins_MultA|Mult0~mac_RESULTA_bus [30];
+assign \ins_MultA|Mult0~35  = \ins_MultA|Mult0~mac_RESULTA_bus [31];
+assign \ins_MultA|Mult0~36  = \ins_MultA|Mult0~mac_RESULTA_bus [32];
+assign \ins_MultA|Mult0~37  = \ins_MultA|Mult0~mac_RESULTA_bus [33];
+assign \ins_MultA|Mult0~38  = \ins_MultA|Mult0~mac_RESULTA_bus [34];
+assign \ins_MultA|Mult0~39  = \ins_MultA|Mult0~mac_RESULTA_bus [35];
+assign \ins_MultA|Mult0~40  = \ins_MultA|Mult0~mac_RESULTA_bus [36];
+assign \ins_MultA|Mult0~41  = \ins_MultA|Mult0~mac_RESULTA_bus [37];
+assign \ins_MultA|Mult0~42  = \ins_MultA|Mult0~mac_RESULTA_bus [38];
+assign \ins_MultA|Mult0~43  = \ins_MultA|Mult0~mac_RESULTA_bus [39];
+assign \ins_MultA|Mult0~44  = \ins_MultA|Mult0~mac_RESULTA_bus [40];
+assign \ins_MultA|Mult0~45  = \ins_MultA|Mult0~mac_RESULTA_bus [41];
+assign \ins_MultA|Mult0~46  = \ins_MultA|Mult0~mac_RESULTA_bus [42];
+assign \ins_MultA|Mult0~47  = \ins_MultA|Mult0~mac_RESULTA_bus [43];
+assign \ins_MultA|Mult0~48  = \ins_MultA|Mult0~mac_RESULTA_bus [44];
+assign \ins_MultA|Mult0~49  = \ins_MultA|Mult0~mac_RESULTA_bus [45];
+assign \ins_MultA|Mult0~50  = \ins_MultA|Mult0~mac_RESULTA_bus [46];
+assign \ins_MultA|Mult0~51  = \ins_MultA|Mult0~mac_RESULTA_bus [47];
+assign \ins_MultA|Mult0~52  = \ins_MultA|Mult0~mac_RESULTA_bus [48];
+assign \ins_MultA|Mult0~53  = \ins_MultA|Mult0~mac_RESULTA_bus [49];
+assign \ins_MultA|Mult0~54  = \ins_MultA|Mult0~mac_RESULTA_bus [50];
+assign \ins_MultA|Mult0~55  = \ins_MultA|Mult0~mac_RESULTA_bus [51];
+assign \ins_MultA|Mult0~56  = \ins_MultA|Mult0~mac_RESULTA_bus [52];
+assign \ins_MultA|Mult0~57  = \ins_MultA|Mult0~mac_RESULTA_bus [53];
+assign \ins_MultA|Mult0~58  = \ins_MultA|Mult0~mac_RESULTA_bus [54];
+assign \ins_MultA|Mult0~59  = \ins_MultA|Mult0~mac_RESULTA_bus [55];
+assign \ins_MultA|Mult0~60  = \ins_MultA|Mult0~mac_RESULTA_bus [56];
+assign \ins_MultA|Mult0~61  = \ins_MultA|Mult0~mac_RESULTA_bus [57];
+assign \ins_MultA|Mult0~62  = \ins_MultA|Mult0~mac_RESULTA_bus [58];
+assign \ins_MultA|Mult0~63  = \ins_MultA|Mult0~mac_RESULTA_bus [59];
+assign \ins_MultA|Mult0~64  = \ins_MultA|Mult0~mac_RESULTA_bus [60];
+assign \ins_MultA|Mult0~65  = \ins_MultA|Mult0~mac_RESULTA_bus [61];
+assign \ins_MultA|Mult0~66  = \ins_MultA|Mult0~mac_RESULTA_bus [62];
+assign \ins_MultA|Mult0~67  = \ins_MultA|Mult0~mac_RESULTA_bus [63];
+
+assign \ins_MultB|out [0] = \ins_MultB|Mult0~mac_RESULTA_bus [0];
+assign \ins_MultB|out [1] = \ins_MultB|Mult0~mac_RESULTA_bus [1];
+assign \ins_MultB|out [2] = \ins_MultB|Mult0~mac_RESULTA_bus [2];
+assign \ins_MultB|out [3] = \ins_MultB|Mult0~mac_RESULTA_bus [3];
+assign \ins_MultB|Mult0~8  = \ins_MultB|Mult0~mac_RESULTA_bus [4];
+assign \ins_MultB|Mult0~9  = \ins_MultB|Mult0~mac_RESULTA_bus [5];
+assign \ins_MultB|Mult0~10  = \ins_MultB|Mult0~mac_RESULTA_bus [6];
+assign \ins_MultB|Mult0~11  = \ins_MultB|Mult0~mac_RESULTA_bus [7];
+assign \ins_MultB|Mult0~12  = \ins_MultB|Mult0~mac_RESULTA_bus [8];
+assign \ins_MultB|Mult0~13  = \ins_MultB|Mult0~mac_RESULTA_bus [9];
+assign \ins_MultB|Mult0~14  = \ins_MultB|Mult0~mac_RESULTA_bus [10];
+assign \ins_MultB|Mult0~15  = \ins_MultB|Mult0~mac_RESULTA_bus [11];
+assign \ins_MultB|Mult0~16  = \ins_MultB|Mult0~mac_RESULTA_bus [12];
+assign \ins_MultB|Mult0~17  = \ins_MultB|Mult0~mac_RESULTA_bus [13];
+assign \ins_MultB|Mult0~18  = \ins_MultB|Mult0~mac_RESULTA_bus [14];
+assign \ins_MultB|Mult0~19  = \ins_MultB|Mult0~mac_RESULTA_bus [15];
+assign \ins_MultB|Mult0~20  = \ins_MultB|Mult0~mac_RESULTA_bus [16];
+assign \ins_MultB|Mult0~21  = \ins_MultB|Mult0~mac_RESULTA_bus [17];
+assign \ins_MultB|Mult0~22  = \ins_MultB|Mult0~mac_RESULTA_bus [18];
+assign \ins_MultB|Mult0~23  = \ins_MultB|Mult0~mac_RESULTA_bus [19];
+assign \ins_MultB|Mult0~24  = \ins_MultB|Mult0~mac_RESULTA_bus [20];
+assign \ins_MultB|Mult0~25  = \ins_MultB|Mult0~mac_RESULTA_bus [21];
+assign \ins_MultB|Mult0~26  = \ins_MultB|Mult0~mac_RESULTA_bus [22];
+assign \ins_MultB|Mult0~27  = \ins_MultB|Mult0~mac_RESULTA_bus [23];
+assign \ins_MultB|Mult0~28  = \ins_MultB|Mult0~mac_RESULTA_bus [24];
+assign \ins_MultB|Mult0~29  = \ins_MultB|Mult0~mac_RESULTA_bus [25];
+assign \ins_MultB|Mult0~30  = \ins_MultB|Mult0~mac_RESULTA_bus [26];
+assign \ins_MultB|Mult0~31  = \ins_MultB|Mult0~mac_RESULTA_bus [27];
+assign \ins_MultB|Mult0~32  = \ins_MultB|Mult0~mac_RESULTA_bus [28];
+assign \ins_MultB|Mult0~33  = \ins_MultB|Mult0~mac_RESULTA_bus [29];
+assign \ins_MultB|Mult0~34  = \ins_MultB|Mult0~mac_RESULTA_bus [30];
+assign \ins_MultB|Mult0~35  = \ins_MultB|Mult0~mac_RESULTA_bus [31];
+assign \ins_MultB|Mult0~36  = \ins_MultB|Mult0~mac_RESULTA_bus [32];
+assign \ins_MultB|Mult0~37  = \ins_MultB|Mult0~mac_RESULTA_bus [33];
+assign \ins_MultB|Mult0~38  = \ins_MultB|Mult0~mac_RESULTA_bus [34];
+assign \ins_MultB|Mult0~39  = \ins_MultB|Mult0~mac_RESULTA_bus [35];
+assign \ins_MultB|Mult0~40  = \ins_MultB|Mult0~mac_RESULTA_bus [36];
+assign \ins_MultB|Mult0~41  = \ins_MultB|Mult0~mac_RESULTA_bus [37];
+assign \ins_MultB|Mult0~42  = \ins_MultB|Mult0~mac_RESULTA_bus [38];
+assign \ins_MultB|Mult0~43  = \ins_MultB|Mult0~mac_RESULTA_bus [39];
+assign \ins_MultB|Mult0~44  = \ins_MultB|Mult0~mac_RESULTA_bus [40];
+assign \ins_MultB|Mult0~45  = \ins_MultB|Mult0~mac_RESULTA_bus [41];
+assign \ins_MultB|Mult0~46  = \ins_MultB|Mult0~mac_RESULTA_bus [42];
+assign \ins_MultB|Mult0~47  = \ins_MultB|Mult0~mac_RESULTA_bus [43];
+assign \ins_MultB|Mult0~48  = \ins_MultB|Mult0~mac_RESULTA_bus [44];
+assign \ins_MultB|Mult0~49  = \ins_MultB|Mult0~mac_RESULTA_bus [45];
+assign \ins_MultB|Mult0~50  = \ins_MultB|Mult0~mac_RESULTA_bus [46];
+assign \ins_MultB|Mult0~51  = \ins_MultB|Mult0~mac_RESULTA_bus [47];
+assign \ins_MultB|Mult0~52  = \ins_MultB|Mult0~mac_RESULTA_bus [48];
+assign \ins_MultB|Mult0~53  = \ins_MultB|Mult0~mac_RESULTA_bus [49];
+assign \ins_MultB|Mult0~54  = \ins_MultB|Mult0~mac_RESULTA_bus [50];
+assign \ins_MultB|Mult0~55  = \ins_MultB|Mult0~mac_RESULTA_bus [51];
+assign \ins_MultB|Mult0~56  = \ins_MultB|Mult0~mac_RESULTA_bus [52];
+assign \ins_MultB|Mult0~57  = \ins_MultB|Mult0~mac_RESULTA_bus [53];
+assign \ins_MultB|Mult0~58  = \ins_MultB|Mult0~mac_RESULTA_bus [54];
+assign \ins_MultB|Mult0~59  = \ins_MultB|Mult0~mac_RESULTA_bus [55];
+assign \ins_MultB|Mult0~60  = \ins_MultB|Mult0~mac_RESULTA_bus [56];
+assign \ins_MultB|Mult0~61  = \ins_MultB|Mult0~mac_RESULTA_bus [57];
+assign \ins_MultB|Mult0~62  = \ins_MultB|Mult0~mac_RESULTA_bus [58];
+assign \ins_MultB|Mult0~63  = \ins_MultB|Mult0~mac_RESULTA_bus [59];
+assign \ins_MultB|Mult0~64  = \ins_MultB|Mult0~mac_RESULTA_bus [60];
+assign \ins_MultB|Mult0~65  = \ins_MultB|Mult0~mac_RESULTA_bus [61];
+assign \ins_MultB|Mult0~66  = \ins_MultB|Mult0~mac_RESULTA_bus [62];
+assign \ins_MultB|Mult0~67  = \ins_MultB|Mult0~mac_RESULTA_bus [63];
+
+assign \ins_MultAB|out [0] = \ins_MultAB|Mult0~mac_RESULTA_bus [0];
+assign \ins_MultAB|out [1] = \ins_MultAB|Mult0~mac_RESULTA_bus [1];
+assign \ins_MultAB|out [2] = \ins_MultAB|Mult0~mac_RESULTA_bus [2];
+assign \ins_MultAB|out [3] = \ins_MultAB|Mult0~mac_RESULTA_bus [3];
+assign \ins_MultAB|Mult0~8  = \ins_MultAB|Mult0~mac_RESULTA_bus [4];
+assign \ins_MultAB|Mult0~9  = \ins_MultAB|Mult0~mac_RESULTA_bus [5];
+assign \ins_MultAB|Mult0~10  = \ins_MultAB|Mult0~mac_RESULTA_bus [6];
+assign \ins_MultAB|Mult0~11  = \ins_MultAB|Mult0~mac_RESULTA_bus [7];
+assign \ins_MultAB|Mult0~12  = \ins_MultAB|Mult0~mac_RESULTA_bus [8];
+assign \ins_MultAB|Mult0~13  = \ins_MultAB|Mult0~mac_RESULTA_bus [9];
+assign \ins_MultAB|Mult0~14  = \ins_MultAB|Mult0~mac_RESULTA_bus [10];
+assign \ins_MultAB|Mult0~15  = \ins_MultAB|Mult0~mac_RESULTA_bus [11];
+assign \ins_MultAB|Mult0~16  = \ins_MultAB|Mult0~mac_RESULTA_bus [12];
+assign \ins_MultAB|Mult0~17  = \ins_MultAB|Mult0~mac_RESULTA_bus [13];
+assign \ins_MultAB|Mult0~18  = \ins_MultAB|Mult0~mac_RESULTA_bus [14];
+assign \ins_MultAB|Mult0~19  = \ins_MultAB|Mult0~mac_RESULTA_bus [15];
+assign \ins_MultAB|Mult0~20  = \ins_MultAB|Mult0~mac_RESULTA_bus [16];
+assign \ins_MultAB|Mult0~21  = \ins_MultAB|Mult0~mac_RESULTA_bus [17];
+assign \ins_MultAB|Mult0~22  = \ins_MultAB|Mult0~mac_RESULTA_bus [18];
+assign \ins_MultAB|Mult0~23  = \ins_MultAB|Mult0~mac_RESULTA_bus [19];
+assign \ins_MultAB|Mult0~24  = \ins_MultAB|Mult0~mac_RESULTA_bus [20];
+assign \ins_MultAB|Mult0~25  = \ins_MultAB|Mult0~mac_RESULTA_bus [21];
+assign \ins_MultAB|Mult0~26  = \ins_MultAB|Mult0~mac_RESULTA_bus [22];
+assign \ins_MultAB|Mult0~27  = \ins_MultAB|Mult0~mac_RESULTA_bus [23];
+assign \ins_MultAB|Mult0~28  = \ins_MultAB|Mult0~mac_RESULTA_bus [24];
+assign \ins_MultAB|Mult0~29  = \ins_MultAB|Mult0~mac_RESULTA_bus [25];
+assign \ins_MultAB|Mult0~30  = \ins_MultAB|Mult0~mac_RESULTA_bus [26];
+assign \ins_MultAB|Mult0~31  = \ins_MultAB|Mult0~mac_RESULTA_bus [27];
+assign \ins_MultAB|Mult0~32  = \ins_MultAB|Mult0~mac_RESULTA_bus [28];
+assign \ins_MultAB|Mult0~33  = \ins_MultAB|Mult0~mac_RESULTA_bus [29];
+assign \ins_MultAB|Mult0~34  = \ins_MultAB|Mult0~mac_RESULTA_bus [30];
+assign \ins_MultAB|Mult0~35  = \ins_MultAB|Mult0~mac_RESULTA_bus [31];
+assign \ins_MultAB|Mult0~36  = \ins_MultAB|Mult0~mac_RESULTA_bus [32];
+assign \ins_MultAB|Mult0~37  = \ins_MultAB|Mult0~mac_RESULTA_bus [33];
+assign \ins_MultAB|Mult0~38  = \ins_MultAB|Mult0~mac_RESULTA_bus [34];
+assign \ins_MultAB|Mult0~39  = \ins_MultAB|Mult0~mac_RESULTA_bus [35];
+assign \ins_MultAB|Mult0~40  = \ins_MultAB|Mult0~mac_RESULTA_bus [36];
+assign \ins_MultAB|Mult0~41  = \ins_MultAB|Mult0~mac_RESULTA_bus [37];
+assign \ins_MultAB|Mult0~42  = \ins_MultAB|Mult0~mac_RESULTA_bus [38];
+assign \ins_MultAB|Mult0~43  = \ins_MultAB|Mult0~mac_RESULTA_bus [39];
+assign \ins_MultAB|Mult0~44  = \ins_MultAB|Mult0~mac_RESULTA_bus [40];
+assign \ins_MultAB|Mult0~45  = \ins_MultAB|Mult0~mac_RESULTA_bus [41];
+assign \ins_MultAB|Mult0~46  = \ins_MultAB|Mult0~mac_RESULTA_bus [42];
+assign \ins_MultAB|Mult0~47  = \ins_MultAB|Mult0~mac_RESULTA_bus [43];
+assign \ins_MultAB|Mult0~48  = \ins_MultAB|Mult0~mac_RESULTA_bus [44];
+assign \ins_MultAB|Mult0~49  = \ins_MultAB|Mult0~mac_RESULTA_bus [45];
+assign \ins_MultAB|Mult0~50  = \ins_MultAB|Mult0~mac_RESULTA_bus [46];
+assign \ins_MultAB|Mult0~51  = \ins_MultAB|Mult0~mac_RESULTA_bus [47];
+assign \ins_MultAB|Mult0~52  = \ins_MultAB|Mult0~mac_RESULTA_bus [48];
+assign \ins_MultAB|Mult0~53  = \ins_MultAB|Mult0~mac_RESULTA_bus [49];
+assign \ins_MultAB|Mult0~54  = \ins_MultAB|Mult0~mac_RESULTA_bus [50];
+assign \ins_MultAB|Mult0~55  = \ins_MultAB|Mult0~mac_RESULTA_bus [51];
+assign \ins_MultAB|Mult0~56  = \ins_MultAB|Mult0~mac_RESULTA_bus [52];
+assign \ins_MultAB|Mult0~57  = \ins_MultAB|Mult0~mac_RESULTA_bus [53];
+assign \ins_MultAB|Mult0~58  = \ins_MultAB|Mult0~mac_RESULTA_bus [54];
+assign \ins_MultAB|Mult0~59  = \ins_MultAB|Mult0~mac_RESULTA_bus [55];
+assign \ins_MultAB|Mult0~60  = \ins_MultAB|Mult0~mac_RESULTA_bus [56];
+assign \ins_MultAB|Mult0~61  = \ins_MultAB|Mult0~mac_RESULTA_bus [57];
+assign \ins_MultAB|Mult0~62  = \ins_MultAB|Mult0~mac_RESULTA_bus [58];
+assign \ins_MultAB|Mult0~63  = \ins_MultAB|Mult0~mac_RESULTA_bus [59];
+assign \ins_MultAB|Mult0~64  = \ins_MultAB|Mult0~mac_RESULTA_bus [60];
+assign \ins_MultAB|Mult0~65  = \ins_MultAB|Mult0~mac_RESULTA_bus [61];
+assign \ins_MultAB|Mult0~66  = \ins_MultAB|Mult0~mac_RESULTA_bus [62];
+assign \ins_MultAB|Mult0~67  = \ins_MultAB|Mult0~mac_RESULTA_bus [63];
+
+cyclonev_io_obuf \Y[0]~output (
+	.i(\inst_Soma1|Add0~1_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[0]~output .bus_hold = "false";
+defparam \Y[0]~output .open_drain_output = "false";
+defparam \Y[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[1]~output (
+	.i(\inst_Soma1|Add0~5_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[1]~output .bus_hold = "false";
+defparam \Y[1]~output .open_drain_output = "false";
+defparam \Y[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[2]~output (
+	.i(\inst_Soma1|Add0~9_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[2]~output .bus_hold = "false";
+defparam \Y[2]~output .open_drain_output = "false";
+defparam \Y[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[3]~output (
+	.i(\inst_Soma1|Add0~13_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[3]~output .bus_hold = "false";
+defparam \Y[3]~output .open_drain_output = "false";
+defparam \Y[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[4]~output (
+	.i(\inst_Soma1|Add0~17_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[4]~output .bus_hold = "false";
+defparam \Y[4]~output .open_drain_output = "false";
+defparam \Y[4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[5]~output .bus_hold = "false";
+defparam \Y[5]~output .open_drain_output = "false";
+defparam \Y[5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Y[6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Y[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Y[6]~output .bus_hold = "false";
+defparam \Y[6]~output .open_drain_output = "false";
+defparam \Y[6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Yab[0]~output (
+	.i(\inst_Soma2|Add0~1_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Yab[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Yab[0]~output .bus_hold = "false";
+defparam \Yab[0]~output .open_drain_output = "false";
+defparam \Yab[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Yab[1]~output (
+	.i(\inst_Soma2|Add0~5_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Yab[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Yab[1]~output .bus_hold = "false";
+defparam \Yab[1]~output .open_drain_output = "false";
+defparam \Yab[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Yab[2]~output (
+	.i(\inst_Soma2|Add0~9_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Yab[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Yab[2]~output .bus_hold = "false";
+defparam \Yab[2]~output .open_drain_output = "false";
+defparam \Yab[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Yab[3]~output (
+	.i(\inst_Soma2|Add0~13_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Yab[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Yab[3]~output .bus_hold = "false";
+defparam \Yab[3]~output .open_drain_output = "false";
+defparam \Yab[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Yab[4]~output (
+	.i(\inst_Soma2|Add0~17_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Yab[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Yab[4]~output .bus_hold = "false";
+defparam \Yab[4]~output .open_drain_output = "false";
+defparam \Yab[4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Yab[5]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Yab[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Yab[5]~output .bus_hold = "false";
+defparam \Yab[5]~output .open_drain_output = "false";
+defparam \Yab[5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Yab[6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Yab[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Yab[6]~output .bus_hold = "false";
+defparam \Yab[6]~output .open_drain_output = "false";
+defparam \Yab[6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Z[0]~output (
+	.i(\inst_SomaGeral|Add0~1_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Z[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Z[0]~output .bus_hold = "false";
+defparam \Z[0]~output .open_drain_output = "false";
+defparam \Z[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Z[1]~output (
+	.i(\inst_SomaGeral|Add0~5_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Z[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Z[1]~output .bus_hold = "false";
+defparam \Z[1]~output .open_drain_output = "false";
+defparam \Z[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Z[2]~output (
+	.i(\inst_SomaGeral|Add0~9_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Z[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Z[2]~output .bus_hold = "false";
+defparam \Z[2]~output .open_drain_output = "false";
+defparam \Z[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Z[3]~output (
+	.i(\inst_SomaGeral|Add0~13_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Z[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Z[3]~output .bus_hold = "false";
+defparam \Z[3]~output .open_drain_output = "false";
+defparam \Z[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Z[4]~output (
+	.i(\inst_SomaGeral|Add0~17_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Z[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Z[4]~output .bus_hold = "false";
+defparam \Z[4]~output .open_drain_output = "false";
+defparam \Z[4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Z[5]~output (
+	.i(\inst_SomaGeral|Add0~21_sumout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Z[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Z[5]~output .bus_hold = "false";
+defparam \Z[5]~output .open_drain_output = "false";
+defparam \Z[5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Z[6]~output (
+	.i(gnd),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Z[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Z[6]~output .bus_hold = "false";
+defparam \Z[6]~output .open_drain_output = "false";
+defparam \Z[6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \A[0]~input (
+	.i(A[0]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\A[0]~input_o ));
+// synopsys translate_off
+defparam \A[0]~input .bus_hold = "false";
+defparam \A[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \A[1]~input (
+	.i(A[1]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\A[1]~input_o ));
+// synopsys translate_off
+defparam \A[1]~input .bus_hold = "false";
+defparam \A[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_mac \ins_MultA|Mult0~mac (
+	.sub(gnd),
+	.negate(gnd),
+	.accumulate(gnd),
+	.loadconst(gnd),
+	.ax({\A[1]~input_o ,\A[0]~input_o }),
+	.ay({\A[1]~input_o ,\A[0]~input_o }),
+	.az(26'b00000000000000000000000000),
+	.bx(18'b000000000000000000),
+	.by(19'b0000000000000000000),
+	.bz(18'b000000000000000000),
+	.coefsela(3'b000),
+	.coefselb(3'b000),
+	.clk(3'b000),
+	.aclr(2'b00),
+	.ena(3'b111),
+	.scanin(27'b000000000000000000000000000),
+	.chainin(1'b0),
+	.dftout(),
+	.resulta(\ins_MultA|Mult0~mac_RESULTA_bus ),
+	.resultb(),
+	.scanout(),
+	.chainout());
+// synopsys translate_off
+defparam \ins_MultA|Mult0~mac .accumulate_clock = "none";
+defparam \ins_MultA|Mult0~mac .ax_clock = "none";
+defparam \ins_MultA|Mult0~mac .ax_width = 2;
+defparam \ins_MultA|Mult0~mac .ay_scan_in_clock = "none";
+defparam \ins_MultA|Mult0~mac .ay_scan_in_width = 2;
+defparam \ins_MultA|Mult0~mac .ay_use_scan_in = "false";
+defparam \ins_MultA|Mult0~mac .az_clock = "none";
+defparam \ins_MultA|Mult0~mac .bx_clock = "none";
+defparam \ins_MultA|Mult0~mac .by_clock = "none";
+defparam \ins_MultA|Mult0~mac .by_use_scan_in = "false";
+defparam \ins_MultA|Mult0~mac .bz_clock = "none";
+defparam \ins_MultA|Mult0~mac .coef_a_0 = 0;
+defparam \ins_MultA|Mult0~mac .coef_a_1 = 0;
+defparam \ins_MultA|Mult0~mac .coef_a_2 = 0;
+defparam \ins_MultA|Mult0~mac .coef_a_3 = 0;
+defparam \ins_MultA|Mult0~mac .coef_a_4 = 0;
+defparam \ins_MultA|Mult0~mac .coef_a_5 = 0;
+defparam \ins_MultA|Mult0~mac .coef_a_6 = 0;
+defparam \ins_MultA|Mult0~mac .coef_a_7 = 0;
+defparam \ins_MultA|Mult0~mac .coef_b_0 = 0;
+defparam \ins_MultA|Mult0~mac .coef_b_1 = 0;
+defparam \ins_MultA|Mult0~mac .coef_b_2 = 0;
+defparam \ins_MultA|Mult0~mac .coef_b_3 = 0;
+defparam \ins_MultA|Mult0~mac .coef_b_4 = 0;
+defparam \ins_MultA|Mult0~mac .coef_b_5 = 0;
+defparam \ins_MultA|Mult0~mac .coef_b_6 = 0;
+defparam \ins_MultA|Mult0~mac .coef_b_7 = 0;
+defparam \ins_MultA|Mult0~mac .coef_sel_a_clock = "none";
+defparam \ins_MultA|Mult0~mac .coef_sel_b_clock = "none";
+defparam \ins_MultA|Mult0~mac .delay_scan_out_ay = "false";
+defparam \ins_MultA|Mult0~mac .delay_scan_out_by = "false";
+defparam \ins_MultA|Mult0~mac .enable_double_accum = "false";
+defparam \ins_MultA|Mult0~mac .load_const_clock = "none";
+defparam \ins_MultA|Mult0~mac .load_const_value = 0;
+defparam \ins_MultA|Mult0~mac .mode_sub_location = 0;
+defparam \ins_MultA|Mult0~mac .negate_clock = "none";
+defparam \ins_MultA|Mult0~mac .operand_source_max = "input";
+defparam \ins_MultA|Mult0~mac .operand_source_may = "input";
+defparam \ins_MultA|Mult0~mac .operand_source_mbx = "input";
+defparam \ins_MultA|Mult0~mac .operand_source_mby = "input";
+defparam \ins_MultA|Mult0~mac .operation_mode = "m9x9";
+defparam \ins_MultA|Mult0~mac .output_clock = "none";
+defparam \ins_MultA|Mult0~mac .preadder_subtract_a = "false";
+defparam \ins_MultA|Mult0~mac .preadder_subtract_b = "false";
+defparam \ins_MultA|Mult0~mac .result_a_width = 64;
+defparam \ins_MultA|Mult0~mac .signed_max = "false";
+defparam \ins_MultA|Mult0~mac .signed_may = "false";
+defparam \ins_MultA|Mult0~mac .signed_mbx = "false";
+defparam \ins_MultA|Mult0~mac .signed_mby = "false";
+defparam \ins_MultA|Mult0~mac .sub_clock = "none";
+defparam \ins_MultA|Mult0~mac .use_chainadder = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \B[0]~input (
+	.i(B[0]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\B[0]~input_o ));
+// synopsys translate_off
+defparam \B[0]~input .bus_hold = "false";
+defparam \B[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \B[1]~input (
+	.i(B[1]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\B[1]~input_o ));
+// synopsys translate_off
+defparam \B[1]~input .bus_hold = "false";
+defparam \B[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_mac \ins_MultB|Mult0~mac (
+	.sub(gnd),
+	.negate(gnd),
+	.accumulate(gnd),
+	.loadconst(gnd),
+	.ax({\B[1]~input_o ,\B[0]~input_o }),
+	.ay({\B[1]~input_o ,\B[0]~input_o }),
+	.az(26'b00000000000000000000000000),
+	.bx(18'b000000000000000000),
+	.by(19'b0000000000000000000),
+	.bz(18'b000000000000000000),
+	.coefsela(3'b000),
+	.coefselb(3'b000),
+	.clk(3'b000),
+	.aclr(2'b00),
+	.ena(3'b111),
+	.scanin(27'b000000000000000000000000000),
+	.chainin(1'b0),
+	.dftout(),
+	.resulta(\ins_MultB|Mult0~mac_RESULTA_bus ),
+	.resultb(),
+	.scanout(),
+	.chainout());
+// synopsys translate_off
+defparam \ins_MultB|Mult0~mac .accumulate_clock = "none";
+defparam \ins_MultB|Mult0~mac .ax_clock = "none";
+defparam \ins_MultB|Mult0~mac .ax_width = 2;
+defparam \ins_MultB|Mult0~mac .ay_scan_in_clock = "none";
+defparam \ins_MultB|Mult0~mac .ay_scan_in_width = 2;
+defparam \ins_MultB|Mult0~mac .ay_use_scan_in = "false";
+defparam \ins_MultB|Mult0~mac .az_clock = "none";
+defparam \ins_MultB|Mult0~mac .bx_clock = "none";
+defparam \ins_MultB|Mult0~mac .by_clock = "none";
+defparam \ins_MultB|Mult0~mac .by_use_scan_in = "false";
+defparam \ins_MultB|Mult0~mac .bz_clock = "none";
+defparam \ins_MultB|Mult0~mac .coef_a_0 = 0;
+defparam \ins_MultB|Mult0~mac .coef_a_1 = 0;
+defparam \ins_MultB|Mult0~mac .coef_a_2 = 0;
+defparam \ins_MultB|Mult0~mac .coef_a_3 = 0;
+defparam \ins_MultB|Mult0~mac .coef_a_4 = 0;
+defparam \ins_MultB|Mult0~mac .coef_a_5 = 0;
+defparam \ins_MultB|Mult0~mac .coef_a_6 = 0;
+defparam \ins_MultB|Mult0~mac .coef_a_7 = 0;
+defparam \ins_MultB|Mult0~mac .coef_b_0 = 0;
+defparam \ins_MultB|Mult0~mac .coef_b_1 = 0;
+defparam \ins_MultB|Mult0~mac .coef_b_2 = 0;
+defparam \ins_MultB|Mult0~mac .coef_b_3 = 0;
+defparam \ins_MultB|Mult0~mac .coef_b_4 = 0;
+defparam \ins_MultB|Mult0~mac .coef_b_5 = 0;
+defparam \ins_MultB|Mult0~mac .coef_b_6 = 0;
+defparam \ins_MultB|Mult0~mac .coef_b_7 = 0;
+defparam \ins_MultB|Mult0~mac .coef_sel_a_clock = "none";
+defparam \ins_MultB|Mult0~mac .coef_sel_b_clock = "none";
+defparam \ins_MultB|Mult0~mac .delay_scan_out_ay = "false";
+defparam \ins_MultB|Mult0~mac .delay_scan_out_by = "false";
+defparam \ins_MultB|Mult0~mac .enable_double_accum = "false";
+defparam \ins_MultB|Mult0~mac .load_const_clock = "none";
+defparam \ins_MultB|Mult0~mac .load_const_value = 0;
+defparam \ins_MultB|Mult0~mac .mode_sub_location = 0;
+defparam \ins_MultB|Mult0~mac .negate_clock = "none";
+defparam \ins_MultB|Mult0~mac .operand_source_max = "input";
+defparam \ins_MultB|Mult0~mac .operand_source_may = "input";
+defparam \ins_MultB|Mult0~mac .operand_source_mbx = "input";
+defparam \ins_MultB|Mult0~mac .operand_source_mby = "input";
+defparam \ins_MultB|Mult0~mac .operation_mode = "m9x9";
+defparam \ins_MultB|Mult0~mac .output_clock = "none";
+defparam \ins_MultB|Mult0~mac .preadder_subtract_a = "false";
+defparam \ins_MultB|Mult0~mac .preadder_subtract_b = "false";
+defparam \ins_MultB|Mult0~mac .result_a_width = 64;
+defparam \ins_MultB|Mult0~mac .signed_max = "false";
+defparam \ins_MultB|Mult0~mac .signed_may = "false";
+defparam \ins_MultB|Mult0~mac .signed_mbx = "false";
+defparam \ins_MultB|Mult0~mac .signed_mby = "false";
+defparam \ins_MultB|Mult0~mac .sub_clock = "none";
+defparam \ins_MultB|Mult0~mac .use_chainadder = "false";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_Soma1|Add0~1 (
+// Equation(s):
+// \inst_Soma1|Add0~1_sumout  = SUM(( \ins_MultA|out [0] ) + ( \ins_MultB|out [0] ) + ( !VCC ))
+// \inst_Soma1|Add0~2  = CARRY(( \ins_MultA|out [0] ) + ( \ins_MultB|out [0] ) + ( !VCC ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\ins_MultA|out [0]),
+	.datae(gnd),
+	.dataf(!\ins_MultB|out [0]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_Soma1|Add0~1_sumout ),
+	.cout(\inst_Soma1|Add0~2 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_Soma1|Add0~1 .extended_lut = "off";
+defparam \inst_Soma1|Add0~1 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_Soma1|Add0~1 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_Soma1|Add0~5 (
+// Equation(s):
+// \inst_Soma1|Add0~5_sumout  = SUM(( \ins_MultA|out [1] ) + ( \ins_MultB|out [1] ) + ( \inst_Soma1|Add0~2  ))
+// \inst_Soma1|Add0~6  = CARRY(( \ins_MultA|out [1] ) + ( \ins_MultB|out [1] ) + ( \inst_Soma1|Add0~2  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\ins_MultA|out [1]),
+	.datae(gnd),
+	.dataf(!\ins_MultB|out [1]),
+	.datag(gnd),
+	.cin(\inst_Soma1|Add0~2 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_Soma1|Add0~5_sumout ),
+	.cout(\inst_Soma1|Add0~6 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_Soma1|Add0~5 .extended_lut = "off";
+defparam \inst_Soma1|Add0~5 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_Soma1|Add0~5 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_Soma1|Add0~9 (
+// Equation(s):
+// \inst_Soma1|Add0~9_sumout  = SUM(( \ins_MultA|out [2] ) + ( \ins_MultB|out [2] ) + ( \inst_Soma1|Add0~6  ))
+// \inst_Soma1|Add0~10  = CARRY(( \ins_MultA|out [2] ) + ( \ins_MultB|out [2] ) + ( \inst_Soma1|Add0~6  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\ins_MultA|out [2]),
+	.datae(gnd),
+	.dataf(!\ins_MultB|out [2]),
+	.datag(gnd),
+	.cin(\inst_Soma1|Add0~6 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_Soma1|Add0~9_sumout ),
+	.cout(\inst_Soma1|Add0~10 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_Soma1|Add0~9 .extended_lut = "off";
+defparam \inst_Soma1|Add0~9 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_Soma1|Add0~9 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_Soma1|Add0~13 (
+// Equation(s):
+// \inst_Soma1|Add0~13_sumout  = SUM(( \ins_MultA|out [3] ) + ( \ins_MultB|out [3] ) + ( \inst_Soma1|Add0~10  ))
+// \inst_Soma1|Add0~14  = CARRY(( \ins_MultA|out [3] ) + ( \ins_MultB|out [3] ) + ( \inst_Soma1|Add0~10  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\ins_MultA|out [3]),
+	.datae(gnd),
+	.dataf(!\ins_MultB|out [3]),
+	.datag(gnd),
+	.cin(\inst_Soma1|Add0~10 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_Soma1|Add0~13_sumout ),
+	.cout(\inst_Soma1|Add0~14 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_Soma1|Add0~13 .extended_lut = "off";
+defparam \inst_Soma1|Add0~13 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_Soma1|Add0~13 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_Soma1|Add0~17 (
+// Equation(s):
+// \inst_Soma1|Add0~17_sumout  = SUM(( GND ) + ( GND ) + ( \inst_Soma1|Add0~14  ))
+// \inst_Soma1|Add0~18  = CARRY(( GND ) + ( GND ) + ( \inst_Soma1|Add0~14  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\inst_Soma1|Add0~14 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_Soma1|Add0~17_sumout ),
+	.cout(\inst_Soma1|Add0~18 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_Soma1|Add0~17 .extended_lut = "off";
+defparam \inst_Soma1|Add0~17 .lut_mask = 64'h0000FFFF00000000;
+defparam \inst_Soma1|Add0~17 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_mac \ins_MultAB|Mult0~mac (
+	.sub(gnd),
+	.negate(gnd),
+	.accumulate(gnd),
+	.loadconst(gnd),
+	.ax({\A[1]~input_o ,\A[0]~input_o }),
+	.ay({\B[1]~input_o ,\B[0]~input_o }),
+	.az(26'b00000000000000000000000000),
+	.bx(18'b000000000000000000),
+	.by(19'b0000000000000000000),
+	.bz(18'b000000000000000000),
+	.coefsela(3'b000),
+	.coefselb(3'b000),
+	.clk(3'b000),
+	.aclr(2'b00),
+	.ena(3'b111),
+	.scanin(27'b000000000000000000000000000),
+	.chainin(1'b0),
+	.dftout(),
+	.resulta(\ins_MultAB|Mult0~mac_RESULTA_bus ),
+	.resultb(),
+	.scanout(),
+	.chainout());
+// synopsys translate_off
+defparam \ins_MultAB|Mult0~mac .accumulate_clock = "none";
+defparam \ins_MultAB|Mult0~mac .ax_clock = "none";
+defparam \ins_MultAB|Mult0~mac .ax_width = 2;
+defparam \ins_MultAB|Mult0~mac .ay_scan_in_clock = "none";
+defparam \ins_MultAB|Mult0~mac .ay_scan_in_width = 2;
+defparam \ins_MultAB|Mult0~mac .ay_use_scan_in = "false";
+defparam \ins_MultAB|Mult0~mac .az_clock = "none";
+defparam \ins_MultAB|Mult0~mac .bx_clock = "none";
+defparam \ins_MultAB|Mult0~mac .by_clock = "none";
+defparam \ins_MultAB|Mult0~mac .by_use_scan_in = "false";
+defparam \ins_MultAB|Mult0~mac .bz_clock = "none";
+defparam \ins_MultAB|Mult0~mac .coef_a_0 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_a_1 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_a_2 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_a_3 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_a_4 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_a_5 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_a_6 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_a_7 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_b_0 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_b_1 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_b_2 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_b_3 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_b_4 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_b_5 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_b_6 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_b_7 = 0;
+defparam \ins_MultAB|Mult0~mac .coef_sel_a_clock = "none";
+defparam \ins_MultAB|Mult0~mac .coef_sel_b_clock = "none";
+defparam \ins_MultAB|Mult0~mac .delay_scan_out_ay = "false";
+defparam \ins_MultAB|Mult0~mac .delay_scan_out_by = "false";
+defparam \ins_MultAB|Mult0~mac .enable_double_accum = "false";
+defparam \ins_MultAB|Mult0~mac .load_const_clock = "none";
+defparam \ins_MultAB|Mult0~mac .load_const_value = 0;
+defparam \ins_MultAB|Mult0~mac .mode_sub_location = 0;
+defparam \ins_MultAB|Mult0~mac .negate_clock = "none";
+defparam \ins_MultAB|Mult0~mac .operand_source_max = "input";
+defparam \ins_MultAB|Mult0~mac .operand_source_may = "input";
+defparam \ins_MultAB|Mult0~mac .operand_source_mbx = "input";
+defparam \ins_MultAB|Mult0~mac .operand_source_mby = "input";
+defparam \ins_MultAB|Mult0~mac .operation_mode = "m9x9";
+defparam \ins_MultAB|Mult0~mac .output_clock = "none";
+defparam \ins_MultAB|Mult0~mac .preadder_subtract_a = "false";
+defparam \ins_MultAB|Mult0~mac .preadder_subtract_b = "false";
+defparam \ins_MultAB|Mult0~mac .result_a_width = 64;
+defparam \ins_MultAB|Mult0~mac .signed_max = "false";
+defparam \ins_MultAB|Mult0~mac .signed_may = "false";
+defparam \ins_MultAB|Mult0~mac .signed_mbx = "false";
+defparam \ins_MultAB|Mult0~mac .signed_mby = "false";
+defparam \ins_MultAB|Mult0~mac .sub_clock = "none";
+defparam \ins_MultAB|Mult0~mac .use_chainadder = "false";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_Soma2|Add0~1 (
+// Equation(s):
+// \inst_Soma2|Add0~1_sumout  = SUM(( \ins_MultB|out [0] ) + ( \ins_MultAB|out [0] ) + ( !VCC ))
+// \inst_Soma2|Add0~2  = CARRY(( \ins_MultB|out [0] ) + ( \ins_MultAB|out [0] ) + ( !VCC ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\ins_MultB|out [0]),
+	.datae(gnd),
+	.dataf(!\ins_MultAB|out [0]),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_Soma2|Add0~1_sumout ),
+	.cout(\inst_Soma2|Add0~2 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_Soma2|Add0~1 .extended_lut = "off";
+defparam \inst_Soma2|Add0~1 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_Soma2|Add0~1 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_Soma2|Add0~5 (
+// Equation(s):
+// \inst_Soma2|Add0~5_sumout  = SUM(( \ins_MultB|out [1] ) + ( \ins_MultAB|out [1] ) + ( \inst_Soma2|Add0~2  ))
+// \inst_Soma2|Add0~6  = CARRY(( \ins_MultB|out [1] ) + ( \ins_MultAB|out [1] ) + ( \inst_Soma2|Add0~2  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\ins_MultB|out [1]),
+	.datae(gnd),
+	.dataf(!\ins_MultAB|out [1]),
+	.datag(gnd),
+	.cin(\inst_Soma2|Add0~2 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_Soma2|Add0~5_sumout ),
+	.cout(\inst_Soma2|Add0~6 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_Soma2|Add0~5 .extended_lut = "off";
+defparam \inst_Soma2|Add0~5 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_Soma2|Add0~5 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_Soma2|Add0~9 (
+// Equation(s):
+// \inst_Soma2|Add0~9_sumout  = SUM(( \ins_MultB|out [2] ) + ( \ins_MultAB|out [2] ) + ( \inst_Soma2|Add0~6  ))
+// \inst_Soma2|Add0~10  = CARRY(( \ins_MultB|out [2] ) + ( \ins_MultAB|out [2] ) + ( \inst_Soma2|Add0~6  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\ins_MultB|out [2]),
+	.datae(gnd),
+	.dataf(!\ins_MultAB|out [2]),
+	.datag(gnd),
+	.cin(\inst_Soma2|Add0~6 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_Soma2|Add0~9_sumout ),
+	.cout(\inst_Soma2|Add0~10 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_Soma2|Add0~9 .extended_lut = "off";
+defparam \inst_Soma2|Add0~9 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_Soma2|Add0~9 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_Soma2|Add0~13 (
+// Equation(s):
+// \inst_Soma2|Add0~13_sumout  = SUM(( \ins_MultB|out [3] ) + ( \ins_MultAB|out [3] ) + ( \inst_Soma2|Add0~10  ))
+// \inst_Soma2|Add0~14  = CARRY(( \ins_MultB|out [3] ) + ( \ins_MultAB|out [3] ) + ( \inst_Soma2|Add0~10  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\ins_MultB|out [3]),
+	.datae(gnd),
+	.dataf(!\ins_MultAB|out [3]),
+	.datag(gnd),
+	.cin(\inst_Soma2|Add0~10 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_Soma2|Add0~13_sumout ),
+	.cout(\inst_Soma2|Add0~14 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_Soma2|Add0~13 .extended_lut = "off";
+defparam \inst_Soma2|Add0~13 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_Soma2|Add0~13 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_Soma2|Add0~17 (
+// Equation(s):
+// \inst_Soma2|Add0~17_sumout  = SUM(( GND ) + ( GND ) + ( \inst_Soma2|Add0~14  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\inst_Soma2|Add0~14 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_Soma2|Add0~17_sumout ),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst_Soma2|Add0~17 .extended_lut = "off";
+defparam \inst_Soma2|Add0~17 .lut_mask = 64'h0000FFFF00000000;
+defparam \inst_Soma2|Add0~17 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_SomaGeral|Add0~1 (
+// Equation(s):
+// \inst_SomaGeral|Add0~1_sumout  = SUM(( \inst_Soma1|Add0~1_sumout  ) + ( \inst_Soma2|Add0~1_sumout  ) + ( !VCC ))
+// \inst_SomaGeral|Add0~2  = CARRY(( \inst_Soma1|Add0~1_sumout  ) + ( \inst_Soma2|Add0~1_sumout  ) + ( !VCC ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst_Soma1|Add0~1_sumout ),
+	.datae(gnd),
+	.dataf(!\inst_Soma2|Add0~1_sumout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_SomaGeral|Add0~1_sumout ),
+	.cout(\inst_SomaGeral|Add0~2 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_SomaGeral|Add0~1 .extended_lut = "off";
+defparam \inst_SomaGeral|Add0~1 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_SomaGeral|Add0~1 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_SomaGeral|Add0~5 (
+// Equation(s):
+// \inst_SomaGeral|Add0~5_sumout  = SUM(( \inst_Soma1|Add0~5_sumout  ) + ( \inst_Soma2|Add0~5_sumout  ) + ( \inst_SomaGeral|Add0~2  ))
+// \inst_SomaGeral|Add0~6  = CARRY(( \inst_Soma1|Add0~5_sumout  ) + ( \inst_Soma2|Add0~5_sumout  ) + ( \inst_SomaGeral|Add0~2  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst_Soma1|Add0~5_sumout ),
+	.datae(gnd),
+	.dataf(!\inst_Soma2|Add0~5_sumout ),
+	.datag(gnd),
+	.cin(\inst_SomaGeral|Add0~2 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_SomaGeral|Add0~5_sumout ),
+	.cout(\inst_SomaGeral|Add0~6 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_SomaGeral|Add0~5 .extended_lut = "off";
+defparam \inst_SomaGeral|Add0~5 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_SomaGeral|Add0~5 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_SomaGeral|Add0~9 (
+// Equation(s):
+// \inst_SomaGeral|Add0~9_sumout  = SUM(( \inst_Soma1|Add0~9_sumout  ) + ( \inst_Soma2|Add0~9_sumout  ) + ( \inst_SomaGeral|Add0~6  ))
+// \inst_SomaGeral|Add0~10  = CARRY(( \inst_Soma1|Add0~9_sumout  ) + ( \inst_Soma2|Add0~9_sumout  ) + ( \inst_SomaGeral|Add0~6  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst_Soma1|Add0~9_sumout ),
+	.datae(gnd),
+	.dataf(!\inst_Soma2|Add0~9_sumout ),
+	.datag(gnd),
+	.cin(\inst_SomaGeral|Add0~6 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_SomaGeral|Add0~9_sumout ),
+	.cout(\inst_SomaGeral|Add0~10 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_SomaGeral|Add0~9 .extended_lut = "off";
+defparam \inst_SomaGeral|Add0~9 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_SomaGeral|Add0~9 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_SomaGeral|Add0~13 (
+// Equation(s):
+// \inst_SomaGeral|Add0~13_sumout  = SUM(( \inst_Soma1|Add0~13_sumout  ) + ( \inst_Soma2|Add0~13_sumout  ) + ( \inst_SomaGeral|Add0~10  ))
+// \inst_SomaGeral|Add0~14  = CARRY(( \inst_Soma1|Add0~13_sumout  ) + ( \inst_Soma2|Add0~13_sumout  ) + ( \inst_SomaGeral|Add0~10  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst_Soma1|Add0~13_sumout ),
+	.datae(gnd),
+	.dataf(!\inst_Soma2|Add0~13_sumout ),
+	.datag(gnd),
+	.cin(\inst_SomaGeral|Add0~10 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_SomaGeral|Add0~13_sumout ),
+	.cout(\inst_SomaGeral|Add0~14 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_SomaGeral|Add0~13 .extended_lut = "off";
+defparam \inst_SomaGeral|Add0~13 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_SomaGeral|Add0~13 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_SomaGeral|Add0~17 (
+// Equation(s):
+// \inst_SomaGeral|Add0~17_sumout  = SUM(( \inst_Soma1|Add0~17_sumout  ) + ( \inst_Soma2|Add0~17_sumout  ) + ( \inst_SomaGeral|Add0~14  ))
+// \inst_SomaGeral|Add0~18  = CARRY(( \inst_Soma1|Add0~17_sumout  ) + ( \inst_Soma2|Add0~17_sumout  ) + ( \inst_SomaGeral|Add0~14  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst_Soma1|Add0~17_sumout ),
+	.datae(gnd),
+	.dataf(!\inst_Soma2|Add0~17_sumout ),
+	.datag(gnd),
+	.cin(\inst_SomaGeral|Add0~14 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_SomaGeral|Add0~17_sumout ),
+	.cout(\inst_SomaGeral|Add0~18 ),
+	.shareout());
+// synopsys translate_off
+defparam \inst_SomaGeral|Add0~17 .extended_lut = "off";
+defparam \inst_SomaGeral|Add0~17 .lut_mask = 64'h0000FF00000000FF;
+defparam \inst_SomaGeral|Add0~17 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_Soma1|Add0~21 (
+// Equation(s):
+// \inst_Soma1|Add0~21_sumout  = SUM(( GND ) + ( GND ) + ( \inst_Soma1|Add0~18  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\inst_Soma1|Add0~18 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_Soma1|Add0~21_sumout ),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst_Soma1|Add0~21 .extended_lut = "off";
+defparam \inst_Soma1|Add0~21 .lut_mask = 64'h0000FFFF00000000;
+defparam \inst_Soma1|Add0~21 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst_SomaGeral|Add0~21 (
+// Equation(s):
+// \inst_SomaGeral|Add0~21_sumout  = SUM(( \inst_Soma1|Add0~21_sumout  ) + ( GND ) + ( \inst_SomaGeral|Add0~18  ))
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\inst_Soma1|Add0~21_sumout ),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(\inst_SomaGeral|Add0~18 ),
+	.sharein(gnd),
+	.combout(),
+	.sumout(\inst_SomaGeral|Add0~21_sumout ),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst_SomaGeral|Add0~21 .extended_lut = "off";
+defparam \inst_SomaGeral|Add0~21 .lut_mask = 64'h0000FFFF000000FF;
+defparam \inst_SomaGeral|Add0~21 .shared_arith = "off";
+// synopsys translate_on
+
+assign Y[0] = \Y[0]~output_o ;
+
+assign Y[1] = \Y[1]~output_o ;
+
+assign Y[2] = \Y[2]~output_o ;
+
+assign Y[3] = \Y[3]~output_o ;
+
+assign Y[4] = \Y[4]~output_o ;
+
+assign Y[5] = \Y[5]~output_o ;
+
+assign Y[6] = \Y[6]~output_o ;
+
+assign Yab[0] = \Yab[0]~output_o ;
+
+assign Yab[1] = \Yab[1]~output_o ;
+
+assign Yab[2] = \Yab[2]~output_o ;
+
+assign Yab[3] = \Yab[3]~output_o ;
+
+assign Yab[4] = \Yab[4]~output_o ;
+
+assign Yab[5] = \Yab[5]~output_o ;
+
+assign Yab[6] = \Yab[6]~output_o ;
+
+assign Z[0] = \Z[0]~output_o ;
+
+assign Z[1] = \Z[1]~output_o ;
+
+assign Z[2] = \Z[2]~output_o ;
+
+assign Z[3] = \Z[3]~output_o ;
+
+assign Z[4] = \Z[4]~output_o ;
+
+assign Z[5] = \Z[5]~output_o ;
+
+assign Z[6] = \Z[6]~output_o ;
+
+endmodule

@@ -1,0 +1,11 @@
+module top_Cont64(
+						input clk, clr_n,
+						output reg[5:0] out);
+
+Contador_clr inst_cotador(
+									.clk(clk),
+									.clr_n(clr_n),
+									.a(out)
+									);
+						
+endmodule

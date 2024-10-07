@@ -1,0 +1,9 @@
+module proj1(in, clr_n, ena_in, out_out);
+
+input clr_n;
+input ena_in;
+input [23:0] in;
+output [23:0] out;
+output ena_out;
+
+endmodule 

@@ -1,0 +1,56 @@
+|cont_topLevel
+clk => clk.IN1
+clr_n => clr_n.IN1
+out[0] << Contador:inst_cont.out
+out[1] << Contador:inst_cont.out
+out[2] << Contador:inst_cont.out
+out[3] << Contador:inst_cont.out
+out[4] << Contador:inst_cont.out
+out[5] << Contador:inst_cont.out
+out2[0] << Contador:inst_cont.out2
+out2[1] << Contador:inst_cont.out2
+out2[2] << Contador:inst_cont.out2
+out2[3] << Contador:inst_cont.out2
+out2[4] << Contador:inst_cont.out2
+out2[5] << Contador:inst_cont.out2
+
+
+|cont_topLevel|Contador:inst_cont
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+clk => out[4]~reg0.CLK
+clk => out[5]~reg0.CLK
+clk => cont[0].CLK
+clk => cont[1].CLK
+clk => cont[2].CLK
+clk => cont[3].CLK
+clk => cont[4].CLK
+clk => cont[5].CLK
+clr_n => out[0]~reg0.ACLR
+clr_n => out[1]~reg0.ACLR
+clr_n => out[2]~reg0.ACLR
+clr_n => out[3]~reg0.ACLR
+clr_n => out[4]~reg0.ACLR
+clr_n => out[5]~reg0.ACLR
+clr_n => cont[0].ACLR
+clr_n => cont[1].ACLR
+clr_n => cont[2].ACLR
+clr_n => cont[3].ACLR
+clr_n => cont[4].ACLR
+clr_n => cont[5].ACLR
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out2[0] <= cont[0].DB_MAX_OUTPUT_PORT_TYPE
+out2[1] <= cont[1].DB_MAX_OUTPUT_PORT_TYPE
+out2[2] <= cont[2].DB_MAX_OUTPUT_PORT_TYPE
+out2[3] <= cont[3].DB_MAX_OUTPUT_PORT_TYPE
+out2[4] <= cont[4].DB_MAX_OUTPUT_PORT_TYPE
+out2[5] <= cont[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
