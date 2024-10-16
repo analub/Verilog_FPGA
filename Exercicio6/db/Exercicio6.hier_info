@@ -1,0 +1,21 @@
+|cont_64
+clk => a[0]~reg0.CLK
+clk => a[1]~reg0.CLK
+clk => a[2]~reg0.CLK
+clk => a[3]~reg0.CLK
+clk => a[4]~reg0.CLK
+clk => a[5]~reg0.CLK
+clr_n => a.OUTPUTSELECT
+clr_n => a.OUTPUTSELECT
+clr_n => a.OUTPUTSELECT
+clr_n => a.OUTPUTSELECT
+clr_n => a.OUTPUTSELECT
+clr_n => a.OUTPUTSELECT
+a[0] << a[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a[1] << a[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a[2] << a[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a[3] << a[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a[4] << a[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a[5] << a[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

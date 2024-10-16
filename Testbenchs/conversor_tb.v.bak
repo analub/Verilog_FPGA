@@ -1,0 +1,26 @@
+//escala de tempo
+`timescale 1ns/10ps
+
+//modulo testbench
+module conversor_tb ();
+
+//codigo testbench
+
+//instancia do DUT
+module conversor_PS (input clk, clr_n, ena_in,
+							input [5:0] in,
+							output out, ena_out);
+							
+//instaciar DUT
+paraleloserie conv_PS(
+							.clk(), 
+							.clr_n(), 
+							.ena_in(),
+							.in(),
+							.out(), 
+							.ena_out()
+							);
+
+endmodule
+
+endmodule

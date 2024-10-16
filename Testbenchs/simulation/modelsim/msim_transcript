@@ -1,0 +1,51 @@
+# Reading pref.tcl
+# do Testbenchs_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/bcana/Documents/Faculdade/IC/Projetos/Testbenchs {D:/bcana/Documents/Faculdade/IC/Projetos/Testbenchs/paraleloserie.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:25:08 on Oct 15,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/bcana/Documents/Faculdade/IC/Projetos/Testbenchs" D:/bcana/Documents/Faculdade/IC/Projetos/Testbenchs/paraleloserie.v 
+# -- Compiling module paraleloserie
+# 
+# Top level modules:
+# 	paraleloserie
+# End time: 12:25:08 on Oct 15,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  conversor_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" conversor_tb 
+# Start time: 12:25:08 on Oct 15,2024
+# ** Error: (vsim-3170) Could not find 'conversor_tb'.
+#         Searched libraries:
+#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera
+#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/220model
+#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/sgate
+#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_mf
+#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev
+#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
+#             D:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             D:/bcana/Documents/Faculdade/IC/Projetos/Testbenchs/simulation/modelsim/rtl_work
+#             D:/bcana/Documents/Faculdade/IC/Projetos/Testbenchs/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Testbenchs_run_msim_rtl_verilog.do PAUSED at line 11
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" work.paraleloserie
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" work.paraleloserie 
+# Start time: 12:25:08 on Oct 15,2024
+# Loading work.paraleloserie
+add wave -position insertpoint sim:/paraleloserie/*
+force -freeze sim:/paraleloserie/clk 1 0, 0 {50 ps} -r 100
+# End time: 12:31:44 on Oct 15,2024, Elapsed time: 0:06:36
+# Errors: 1, Warnings: 0

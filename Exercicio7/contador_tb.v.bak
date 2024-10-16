@@ -1,0 +1,34 @@
+`timescale 10ns/10ps
+
+module contador_tb ();
+
+reg clk, clr_n;
+reg [5:0] valor;
+reg [5:0] out;
+wire [1:0] operacao;
+
+initial
+begin
+	clk = 1'b0;
+	#20 clr_n =1'b0;
+end
+
+#20 valor = 6'b100011;
+#30 operacao = 00;
+#30 operacao = 01;
+#30 operacao = 10;
+#30 operacao = 11;
+
+always 
+#5 clk = ~clk;
+
+module Contador
+					(
+					.clk(clk), 
+					clr_n(clr_n),
+					.valor(valor),
+					.cont(out),
+					.operacao(operacao)
+					);
+
+endmodule

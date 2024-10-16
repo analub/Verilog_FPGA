@@ -1,0 +1,129 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/02/2024 14:50:24"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          Contador
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Contador_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg clr_n;
+reg [1:0] operacao;
+reg [5:0] valor;
+// wires                                               
+wire [5:0] cont;
+
+// assign statements (if any)                          
+Contador i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.clr_n(clr_n),
+	.cont(cont),
+	.operacao(operacao),
+	.valor(valor)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #5000 1'b1;
+	#5000;
+end 
+
+// clr_n
+initial
+begin
+	clr_n = 1'b1;
+	clr_n = #70000 1'b0;
+	clr_n = #90000 1'b1;
+	clr_n = #280000 1'b0;
+	clr_n = #80000 1'b1;
+end 
+// operacao[ 1 ]
+initial
+begin
+	operacao[1] = 1'b0;
+	operacao[1] = #180000 1'b1;
+	operacao[1] = #30000 1'b0;
+	operacao[1] = #90000 1'b1;
+	operacao[1] = #40000 1'b0;
+	operacao[1] = #50000 1'b1;
+	operacao[1] = #140000 1'b0;
+end 
+// operacao[ 0 ]
+initial
+begin
+	operacao[0] = 1'b1;
+	operacao[0] = #60000 1'b0;
+	operacao[0] = #330000 1'b1;
+	operacao[0] = #140000 1'b0;
+end 
+// valor[ 5 ]
+initial
+begin
+	valor[5] = 1'b0;
+end 
+// valor[ 4 ]
+initial
+begin
+	valor[4] = 1'b0;
+end 
+// valor[ 3 ]
+initial
+begin
+	valor[3] = 1'b0;
+end 
+// valor[ 2 ]
+initial
+begin
+	valor[2] = 1'b0;
+	valor[2] = #230000 1'b1;
+	valor[2] = #150000 1'b0;
+end 
+// valor[ 1 ]
+initial
+begin
+	valor[1] = 1'b0;
+	valor[1] = #180000 1'b1;
+	valor[1] = #30000 1'b0;
+end 
+// valor[ 0 ]
+initial
+begin
+	valor[0] = 1'b0;
+	valor[0] = #180000 1'b1;
+	valor[0] = #30000 1'b0;
+	valor[0] = #20000 1'b1;
+	valor[0] = #150000 1'b0;
+end 
+endmodule
+

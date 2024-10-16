@@ -1,0 +1,12 @@
+module contador_tb ();
+
+reg clk, clr_n;
+wire [5:0] a;
+
+cont_64 DUT	(
+				.clk(), 
+				.clr_n(),
+				.a()
+				);
+
+endmodule

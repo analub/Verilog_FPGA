@@ -1,0 +1,60 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Desktop/Ana_Luisa/Exercicio7/simulation/modelsim
+vContador
+Z1 !s110 1729023263
+!i10b 1
+!s100 1>]k;12Y2H`NScXeVkdWe3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I@R2oS1<zBOG=Rdo4k;B642
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1729022689
+8E:/Desktop/Ana_Luisa/Exercicio7/Contador.v
+FE:/Desktop/Ana_Luisa/Exercicio7/Contador.v
+!i122 0
+L0 1 30
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1729023263.000000
+!s107 E:/Desktop/Ana_Luisa/Exercicio7/Contador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Desktop/Ana_Luisa/Exercicio7|E:/Desktop/Ana_Luisa/Exercicio7/Contador.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+E:/Desktop/Ana_Luisa/Exercicio7
+Z8 tCvgOpt 0
+n@contador
+vcontador_tb
+R1
+!i10b 1
+!s100 <TO==;S]39Y;InhLkH]?U3
+R2
+I`W2;iSHnDe?=:hLDdUZ:G0
+R3
+R0
+w1729023249
+8E:/Desktop/Ana_Luisa/Exercicio7/contador_tb.v
+FE:/Desktop/Ana_Luisa/Exercicio7/contador_tb.v
+!i122 1
+L0 3 38
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/Desktop/Ana_Luisa/Exercicio7/contador_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Desktop/Ana_Luisa/Exercicio7|E:/Desktop/Ana_Luisa/Exercicio7/contador_tb.v|
+!i113 1
+R6
+R7
+R8
